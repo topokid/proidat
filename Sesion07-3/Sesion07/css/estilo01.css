@@ -1,0 +1,115 @@
+/* CSS Document */
+
+
+		figure {
+			border: thin #c0c0c0 solid;
+			padding: 5px;
+			margin: auto;
+			max-width: 1050px;
+			text-align: center
+		}
+
+		figcaption {
+			background-color: #222;
+			color: #fff;
+			font: italic smaller sans-serif;
+			padding: 3px;
+			text-align: center;
+		}
+
+		.imgCuzco{
+			content: url("../img/imgIsla.jpg");
+			max-width: 500px;
+		}
+		.imgIsla{
+			content: url("../img/imgCuzco.jpg");
+			max-width: 500px;
+		}
+		
+		img, img:hover{
+			transition: all 2s ease-in-out;	
+		}
+
+		img.enfoque:hover{
+			filter: blur(5px);
+		}
+
+		img.gris:hover{
+			filter: grayscale(130%);
+		}
+		/*Aplicar estos 2 estilos*/
+		img.sepia:hover{
+			filter: sepia(100%);
+		}
+		img.rota:hover{
+			filter: hue-rotate(180deg);
+		}
+		img.invertir:hover{
+			filter: invert(100%);
+		}
+		img.saturar:hover{
+			filter: saturate(50%);
+		}
+		img.opacar:hover{
+			filter: opacity(.5);
+		}
+
+		.zoomin:hover .zoom { 
+			transform: scale(4.5); 
+		}
+		.zoomin { 
+			overflow: hidden; 
+		}
+
+		img.rotarX:hover{
+			transform: rotate(360deg); 
+		}
+		img.rotarY:hover{
+			transform: rotateY(180deg);
+			transform-style: preserve-3d;
+		}
+		img.transformar:hover{
+			border-radius: 50%;
+			box-shadow: 0px 0px 15px 15px #ec731e;
+			transform: rotate(360deg);
+		}
+		img.transformarReves{
+			border-radius: 50%;
+			box-shadow: 0px 0px 15px 15px #ec731e;
+		}
+		img.transformarReves:hover{
+			border-radius: 0;
+			box-shadow: 0px 0px 0px 0px #fff;
+			transform: rotate(360deg);
+		}
+		ol{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #f1f1f1;
+			position: sticky;
+			top:0;
+		}
+		li{
+			float: left;
+			border-right: 1px solid #bbb;
+		}
+		li a{
+			display: block;
+			color: #000;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		li a:hover{
+			background-color: #555;
+			color: white;
+		}
+		li.activa a{
+			background-color: #4CAF50;
+			color: white;
+		}
+
+
+
